@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Johan Abdallah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Mon Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+            <a href="CV.pdf" class="btn-outline-dark" download>Télécharger CV</a>
+        </div>
+    </nav>
+
+    <section class="section fade-in">
+        <div class="container">
+            <h1 class="main-title">Mes Projets</h1>
+            <p class="sub-title">Analyse détaillée de mes réalisations</p>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+                <button class="filter-btn" data-filter="res">Réseaux</button>
+                <button class="filter-btn" data-filter="sys">Systèmes</button>
+            </div>
+
+            <div class="projects-grid">
+    
+                <div class="project-card" data-category="cyber">
+                    <div class="project-img-wrapper">
+                        <img src="pentest.png" alt="Pentest">
+                        <span class="badge">Cybersécurité</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pentest d'Infrastructure</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Compromettre une application vulnérable, obtenir un accès système et élever les privilèges jusqu'à root.</p>
+                            <p><strong>Solution :</strong> Exploitation de failles logicielles, pivot réseau et analyse des configurations sudoers dans un environnement Docker.</p>
+                        </div>
+                        <div class="tags"><span>Kali Linux</span><span>Rapport</span><span>Présentation orale</span></div>
+                        <a href="RAPPORT_SAE_PENTEST_ABDALLAH.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Pentest</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="sys">
+                    <div class="project-img-wrapper">
+                        <img src="thales.png" alt="Thales">
+                        <span class="badge">Systèmes</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Système Prise de Photos Thales</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Créer un système de surveillance d'un banc avionique via Raspberry Pi et Pico WH.</p>
+                            <p><strong>Solution :</strong> Développement d'une interface web Flask, base de données MariaDB et communication réseau entre microcontrôleurs.</p>
+                        </div>
+                        <div class="tags"><span>Raspberry Pi</span><span>Python</span><span>MySQL</span></div>
+                        <a href="thales.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Thales</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="Plan_d'adressage_ip_schéma.png" alt="Topologie Réseau Sécurisée">
+                        <span class="badge">Réseaux & Sécurité</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Construction d'un Cœur de Réseau Sécurisé</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Concevoir de bout en bout l'infrastructure réseau d'une entreprise incluant un cœur de réseau performant et une protection périmétrique.</p>
+                            <p><strong>Solution :</strong> Déploiement d'un commutateur Multi-Layer (MLS), segmentation par VLANs, services DHCP/DNS redondants et mise en place d'un pare-feu Cisco ASA avec zone DMZ et NAT statique.</p>
+                        </div>
+                        <div class="tags"><span>Cisco ASA</span><span>VLAN</span><span>DMZ</span><span>Routage OSPF</span></div>
+                        <a href="Plan_d'adressage_ip_schéma.png" class="btn-download" download>
+                            <i class="fa-solid fa-file-pdf"></i> Télécharger la topologie
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="cyber">
+                    <div class="project-img-wrapper">
+                        <img src="scan.png" alt="Scanner de failles réseau">
+                        <span class="badge">Cybersécurité & Dév</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Scanner de Vulnérabilités Multi-plateforme</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Concevoir un écosystème capable de scanner les failles d'un réseau, centraliser les données et les consulter sur différents supports.</p>
+                            <p><strong>Solution :</strong> Développement d'un moteur de scan en Java sur Kali Linux, synchronisation avec une base de données MySQL, et création d'un tableau de bord Web ainsi qu'une application Android pour la visualisation des vulnérabilités en temps réel.</p>
+                        </div>
+                        <div class="tags"><span>Java</span><span>Android</span><span>Kali Linux</span><span>API Vulners</span></div>
+                        <a href="gautero.pdf" class="btn-download" download>
+                            <i class="fa-solid fa-file-pdf"></i> Télécharger la présentation
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="sae21.png" alt="Architecture Réseau">
+                        <span class="badge">Réseaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Architecture DMZ et Pare-feu ASA</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Mettre en place un cœur de réseau sécurisé avec une zone démilitarisée (DMZ).</p>
+                            <p><strong>Solution :</strong> Configuration de VLANs, NAT statique/dynamique et règles d'ACL sur Cisco ASA pour isoler les flux critiques.</p>
+                        </div>
+                        <div class="tags"><span>Cisco ASA</span><span>DMZ</span><span>VLAN</span></div>
+                        <a href="sae21.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Réseau</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="theys.png" alt="Systèmes de diffusion TV">
+                        <span class="badge">Télécoms & Signaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Étude des Systèmes de Diffusion TV</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Analyser les chaînes de transmission de la télévision analogique et numérique (TNT/Satellite).</p>
+                            <p><strong>Solution :</strong> Étude théorique et pratique des modulations (QPSK), des techniques de correction d'erreurs (Viterbi, Reed-Solomon) et des infrastructures de diffusion par faisceaux hertziens.</p>
+                        </div>
+                        <div class="tags"><span>TNT</span><span>QPSK</span><span>Satellite</span><span>Traitement du Signal</span></div>
+                        <a href="theys.pdf" class="btn-download" download>
+                            <i class="fa-solid fa-file-pdf"></i> Télécharger le compte-rendu
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="cyber">
+                    <div class="project-img-wrapper">
+                        <img src="pen1.png" alt="Pentest Linux">
+                        <span class="badge">Pentesting</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pentest 1 : Compromission Linux & Reverse Shell</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Identifier et exploiter des vulnérabilités critiques pour obtenir un accès root sur une machine cible Linux.</p>
+                            <p><strong>Solution :</strong> Énumération des ports via Nmap, exploitation d'une faille d'exécution arbitraire de commande sur le port 8080 (Reverse Shell PHP) et élévation de privilèges via un binaire SUID mal configuré.</p>
+                        </div>
+                        <div class="tags"><span>Reverse Shell</span><span>Nmap</span><span>SUID</span><span>Linux</span></div>
+                        <a href="RapportPentest1.pdf" class="btn-download" download>
+                            <i class="fa-solid fa-file-pdf"></i> Télécharger le Rapport 1
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="cyber">
+                    <div class="project-img-wrapper">
+                        <img src="pen2.png" alt="Pentest Windows">
+                        <span class="badge">Pentesting</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pentest 3 : Injection SQL & EternalBlue</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Compromettre totalement un serveur Windows non patché en combinant des failles Web et Système.</p>
+                            <p><strong>Solution :</strong> Extraction de base de données par Injection SQL (Dump), puis exploitation de la faille critique MS17-010 (EternalBlue) via Metasploit pour obtenir un accès SYSTEM (Meterpreter).</p>
+                        </div>
+                        <div class="tags"><span>EternalBlue</span><span>SQL Injection</span><span>Metasploit</span><span>Windows Server</span></div>
+                        <a href="RapportPentest3_ABDALLAH.pdf" class="btn-download" download>
+                            <i class="fa-solid fa-file-pdf"></i> Télécharger le Rapport 3
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="lorawan-thumbnail.jpg" alt="LoRa">
+                        <span class="badge">Réseaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Optimisation Liaison LoRaWAN</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Calculer la portée maximale et choisir la meilleure configuration SF/BW en milieu urbain.</p>
+                            <p><strong>Solution :</strong> Mise en œuvre de campagnes de mesures RSSI en intérieur et en extérieur pour évaluer les performances des différentes configurations LoRa.</p>
+                        </div>
+                        <div class="tags"><span>IoT</span><span>Lora</span><span>Calculs RF</span></div>
+                        <a href="lora.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport LoRa</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="coax.png" alt="Câble Coaxial">
+                        <span class="badge">Réseaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Caractérisation Câble Coaxial</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Analyser les pertes de signal (atténuation) en fonction de la fréquence.</p>
+                            <p><strong>Solution :</strong> Mesures expérimentales et tracé de courbes théoriques AdB/m(f) = α * sqrt(f) sous Matlab.</p>
+                        </div>
+                        <div class="tags"><span>Matlab</span><span>Transmission</span><span>RF</span></div>
+                        <a href="coaxial.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Coaxial</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="res">
+                    <div class="project-img-wrapper">
+                        <img src="sae12.png" alt="Réseau Domestique">
+                        <span class="badge">Réseaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analyse d'un Réseau Local (LAN)</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Découvrir et cartographier les équipements d'un réseau domestique.</p>
+                            <p><strong>Solution :</strong> Analyse des adresses IP privées/publiques, des masques et configuration du routeur SFR.</p>
+                        </div>
+                        <div class="tags"><span>IPconfig</span><span>LAN</span><span>Routage</span></div>
+                        <a href="domestique.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Fiche Travaux</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="cyber">
+                    <div class="project-img-wrapper">
+                        <img src="cyberdiap.jpg" alt="Sensibilisation">
+                        <span class="badge">Cybersécurité</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stratégie de Sensibilisation Cyber</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Sensibiliser des collégiens aux risques de la publication irréfléchie en ligne.</p>
+                            <p><strong>Solution :</strong> Création d'un jeu d'enquête interactif pour identifier les erreurs d'e-réputation.</p>
+                        </div>
+                        <div class="tags"><span>Éducation</span><span>Prévention</span><span>Réputation</span></div>
+                        <a href="ereput.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Plan de Séance</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" data-category="sys">
+                    <div class="project-img-wrapper">
+                        <img src="planproj.png" alt="Management">
+                        <span class="badge">Systèmes</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plan de Management de Projet</h3>
+                        <div class="project-details">
+                            <p><strong>Objectif :</strong> Définir l'organisation, les ressources et le planning d'un projet complexe.</p>
+                            <p><strong>Solution :</strong> Mise en place d'un Plan d'Assurance Qualité (PAQ) et d'un contrôle de traçabilité complet.</p>
+                        </div>
+                        <div class="tags"><span>Gestion</span><span>Qualité</span><span>Traçabilité</span></div>
+                        <a href="managementprojet.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Dossier Management</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">&copy; 2026 Johan Abdallah - Portfolio</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
