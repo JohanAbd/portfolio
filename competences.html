@@ -1,141 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences - Johan Abdallah</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences — Johan Abdallah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Mon Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="competences.html" class="active">Compétences</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-            </ul>
-            <a href="CV.pdf" class="btn-outline-dark" download>Télécharger CV</a>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Johan<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>
+        <i class="fa-solid fa-download" style="font-size:.75rem;"></i> CV
+      </a>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html" class="active">Compétences</a>
+      <a href="apropos.html">À propos</a>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>Télécharger CV</a>
+    </div>
+  </nav>
 
-    <section class="section fade-in">
-        <div class="container">
-            <h1 class="main-title">Compétences Techniques</h1>
-            <p class="sub-title">Technologies et outils maîtrisés dans les domaines des réseaux et des télécommunications</p>
+  <section class="section header-offset fade-in">
+    <div class="container">
+      <span class="section-tag" style="display:block;text-align:center">Mon stack technique</span>
+      <h1 class="main-title">Compétences Techniques</h1>
+      <p class="sub-title">Technologies et outils maîtrisés dans les réseaux, la cybersécurité et l'administration système</p>
 
-            <div class="skills-wrapper">
-                <div class="skill-category card">
-                    <div class="category-header">
-                        <div class="icon-sq"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3>Cybersécurité</h3>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Analyse réseau</span><span>85%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Nmap</span><span>80%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Metasploit</span><span>65%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="skills-wrapper">
 
-                <div class="skill-category card">
-                    <div class="category-header">
-                        <div class="icon-sq blue-bg"><i class="fa-solid fa-network-wired"></i></div>
-                        <h3>Réseaux</h3>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info"><span>VLAN, Adressage IP</span><span>85%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>TCP/IP</span><span>90%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Cisco Packet Tracer, GNS3</span><span>75%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category card">
-                    <div class="category-header">
-                        <div class="icon-sq mint-bg"><i class="fa-solid fa-server"></i></div>
-                        <h3>Systèmes</h3>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Linux</span><span>85%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Windows Server</span><span>70%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Virtualisation</span><span>80%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category card">
-                    <div class="category-header">
-                        <div class="icon-sq purple-bg"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                        <h3>Outils</h3>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Wireshark</span><span>80%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Kali Linux</span><span>75%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Visual Studio Code (Python, HTML5, Java, C...)</span><span>80%</span></div>
-                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Cybersécurité -->
+        <div class="skill-category fade-in">
+          <div class="category-header">
+            <div class="icon-sq"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Cybersécurité</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Analyse réseau</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
             </div>
-
-            <div class="certifications-section mt-5 card fade-in">
-                <h2 class="text-center">Certifications & Formations</h2>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <div class="card-icon green"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <h4>BUT R&T</h4>
-                        <p>Réseaux & Télécommunications</p>
-                    </div>
-                    <div class="cert-item">
-                        <div class="card-icon green"><i class="fa-solid fa-shield-check"></i></div>
-                        <h4>Certifications</h4>
-                        <p>CCNA1, CCNA2, Voltaire et d'autres à venir...</p>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Nmap / Reconnaissance</span><span>82%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:82%"></div></div>
             </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Metasploit / Exploitation</span><span>65%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Pentest (méthodologie)</span><span>70%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Kali Linux</span><span>75%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:75%"></div></div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container">&copy; 2026 Johan Abdallah - Portfolio</div>
-    </footer>
+        <!-- Réseaux -->
+        <div class="skill-category fade-in">
+          <div class="category-header">
+            <div class="icon-sq blue-bg"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Réseaux</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>TCP/IP, Adressage</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VLAN, Trunking, STP</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Cisco Packet Tracer / GNS3</span><span>78%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Routage OSPF / RIP</span><span>72%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Pare-feu Cisco ASA</span><span>70%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Systèmes -->
+        <div class="skill-category fade-in">
+          <div class="category-header">
+            <div class="icon-sq mint-bg"><i class="fa-solid fa-server"></i></div>
+            <h3>Systèmes</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Linux (Debian/Kali/Ubuntu)</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Windows Server / Active Directory</span><span>72%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Virtualisation (VMware, VirtualBox)</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Docker</span><span>68%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:68%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outils & Développement -->
+        <div class="skill-category fade-in">
+          <div class="category-header">
+            <div class="icon-sq purple-bg"><i class="fa-solid fa-code"></i></div>
+            <h3>Outils & Développement</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Wireshark</span><span>82%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python / Flask</span><span>75%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>PowerShell / Scripting</span><span>68%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:68%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5 / CSS3 / JavaScript</span><span>72%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java / C</span><span>58%</span></div>
+              <div class="progress-bar"><div class="progress" style="width:58%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="mt-5 fade-in">
+        <span class="section-tag" style="display:block;text-align:center">Savoir-être</span>
+        <h2 class="main-title" style="margin-bottom:36px;">Soft Skills</h2>
+        <div class="soft-grid">
+          <div class="soft-item">
+            <i class="fa-solid fa-check-double"></i>
+            <p>Rigueur</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-users"></i>
+            <p>Esprit d'équipe</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-regular fa-lightbulb"></i>
+            <p>Curiosité</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-arrows-spin"></i>
+            <p>Adaptabilité</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-comments"></i>
+            <p>Communication</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-clock"></i>
+            <p>Réactivité</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>Apprentissage continu</p>
+          </div>
+          <div class="soft-item">
+            <i class="fa-solid fa-list-check"></i>
+            <p>Organisation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifications-section fade-in">
+        <span class="section-tag">Certifications</span>
+        <h2>Ce que j'ai validé officiellement</h2>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="card-icon green m-auto"><i class="fa-solid fa-certificate"></i></div>
+            <h4>CCNA1 — Introduction aux réseaux</h4>
+            <p>Cisco Networking Academy — Protocoles, adressage IPv4/IPv6, couches OSI</p>
+          </div>
+          <div class="cert-item">
+            <div class="card-icon green m-auto"><i class="fa-solid fa-certificate"></i></div>
+            <h4>CCNA2 — Routage et switching</h4>
+            <p>Cisco Networking Academy — VLANs, OSPF, STP, ACLs, NAT</p>
+          </div>
+          <div class="cert-item">
+            <div class="card-icon blue m-auto"><i class="fa-solid fa-spell-check"></i></div>
+            <h4>Voltaire — Orthographe française</h4>
+            <p>Certification de maîtrise de l'orthographe professionnelle</p>
+          </div>
+          <div class="cert-item" style="opacity:.6;">
+            <div class="card-icon mint m-auto"><i class="fa-solid fa-hourglass-half"></i></div>
+            <h4>D'autres certifications à venir…</h4>
+            <p>CCNA3 — dans quelques mois</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Johan Abdallah · Portfolio R&T Cybersécurité</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

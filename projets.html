@@ -1,264 +1,455 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets - Johan Abdallah</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Johan Abdallah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Mon Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html" class="active">Projets</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-            </ul>
-            <a href="CV.pdf" class="btn-outline-dark" download>Télécharger CV</a>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Johan<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>
+        <i class="fa-solid fa-download" style="font-size:.75rem;"></i> CV
+      </a>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html">À propos</a>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>Télécharger CV</a>
+    </div>
+  </nav>
+
+  <section class="section header-offset fade-in">
+    <div class="container">
+      <span class="section-tag" style="display:block;text-align:center">Ce que j'ai réalisé</span>
+      <h1 class="main-title">Mes Projets</h1>
+      <p class="sub-title">16 projets académiques et personnels — cliquez sur une carte pour découvrir les détails</p>
+
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+        <button class="filter-btn" data-filter="res">Réseaux</button>
+        <button class="filter-btn" data-filter="sys">Systèmes</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="cyber"
+          data-img="pentest.png"
+          data-badge="Pentesting"
+          data-title="Compromettre une Infrastructure Vulnérable de A à Z"
+          data-context="SAE Pentest réalisée en autonomie sur un environnement Docker intentionnellement vulnérable."
+          data-objectif="Compromettre une application vulnérable, obtenir un accès système et élever les privilèges jusqu'à root."
+          data-solution="Exploitation de failles logicielles, pivot réseau et analyse des configurations sudoers dans un environnement Docker. Rapport complet des étapes d'exploitation."
+          data-personnel="Ce pentest m'a appris la patience : il faut parfois tourner en rond 30 minutes avant de trouver la bonne faille. L'étape d'élévation de privilèges via sudoers m'a particulièrement marqué."
+          data-tags="Kali Linux,Docker,Pentest,Rapport,Présentation orale"
+          data-file="RAPPORT_SAE_PENTEST_ABDALLAH.pdf"
+          data-filelabel="Rapport Pentest Infrastructure">
+          <div class="project-img-wrapper">
+            <img src="pentest.png" alt="Pentest infrastructure">
+            <span class="badge">Pentesting</span>
+          </div>
+          <div class="project-info">
+            <h3>Compromettre une Infrastructure Vulnérable de A à Z</h3>
+            <p class="short-desc">Exploitation de failles, pivot réseau et élévation de privilèges root sur environnement Docker vulnérable.</p>
+            <div class="tags"><span>Kali Linux</span><span>Docker</span><span>Pentest</span></div>
+          </div>
         </div>
-    </nav>
 
-    <section class="section fade-in">
-        <div class="container">
-            <h1 class="main-title">Mes Projets</h1>
-            <p class="sub-title">Analyse détaillée de mes réalisations</p>
-
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
-                <button class="filter-btn" data-filter="res">Réseaux</button>
-                <button class="filter-btn" data-filter="sys">Systèmes</button>
-            </div>
-
-            <div class="projects-grid">
-    
-                <div class="project-card" data-category="cyber">
-                    <div class="project-img-wrapper">
-                        <img src="pentest.png" alt="Pentest">
-                        <span class="badge">Cybersécurité</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pentest d'Infrastructure</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Compromettre une application vulnérable, obtenir un accès système et élever les privilèges jusqu'à root.</p>
-                            <p><strong>Solution :</strong> Exploitation de failles logicielles, pivot réseau et analyse des configurations sudoers dans un environnement Docker.</p>
-                        </div>
-                        <div class="tags"><span>Kali Linux</span><span>Rapport</span><span>Présentation orale</span></div>
-                        <a href="RAPPORT_SAE_PENTEST_ABDALLAH.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Pentest</a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="sys">
-                    <div class="project-img-wrapper">
-                        <img src="thales.png" alt="Thales">
-                        <span class="badge">Systèmes</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Système Prise de Photos Thales</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Créer un système de surveillance d'un banc avionique via Raspberry Pi et Pico WH.</p>
-                            <p><strong>Solution :</strong> Développement d'une interface web Flask, base de données MariaDB et communication réseau entre microcontrôleurs.</p>
-                        </div>
-                        <div class="tags"><span>Raspberry Pi</span><span>Python</span><span>MySQL</span></div>
-                        <a href="thales.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Thales</a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="Plan_d'adressage_ip_schéma.png" alt="Topologie Réseau Sécurisée">
-                        <span class="badge">Réseaux & Sécurité</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Construction d'un Cœur de Réseau Sécurisé</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Concevoir de bout en bout l'infrastructure réseau d'une entreprise incluant un cœur de réseau performant et une protection périmétrique.</p>
-                            <p><strong>Solution :</strong> Déploiement d'un commutateur Multi-Layer (MLS), segmentation par VLANs, services DHCP/DNS redondants et mise en place d'un pare-feu Cisco ASA avec zone DMZ et NAT statique.</p>
-                        </div>
-                        <div class="tags"><span>Cisco ASA</span><span>VLAN</span><span>DMZ</span><span>Routage OSPF</span></div>
-                        <a href="Plan_d'adressage_ip_schéma.png" class="btn-download" download>
-                            <i class="fa-solid fa-file-pdf"></i> Télécharger la topologie
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="cyber">
-                    <div class="project-img-wrapper">
-                        <img src="scan.png" alt="Scanner de failles réseau">
-                        <span class="badge">Cybersécurité & Dév</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Scanner de Vulnérabilités Multi-plateforme</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Concevoir un écosystème capable de scanner les failles d'un réseau, centraliser les données et les consulter sur différents supports.</p>
-                            <p><strong>Solution :</strong> Développement d'un moteur de scan en Java sur Kali Linux, synchronisation avec une base de données MySQL, et création d'un tableau de bord Web ainsi qu'une application Android pour la visualisation des vulnérabilités en temps réel.</p>
-                        </div>
-                        <div class="tags"><span>Java</span><span>Android</span><span>Kali Linux</span><span>API Vulners</span></div>
-                        <a href="gautero.pdf" class="btn-download" download>
-                            <i class="fa-solid fa-file-pdf"></i> Télécharger la présentation
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="sae21.png" alt="Architecture Réseau">
-                        <span class="badge">Réseaux</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Architecture DMZ et Pare-feu ASA</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Mettre en place un cœur de réseau sécurisé avec une zone démilitarisée (DMZ).</p>
-                            <p><strong>Solution :</strong> Configuration de VLANs, NAT statique/dynamique et règles d'ACL sur Cisco ASA pour isoler les flux critiques.</p>
-                        </div>
-                        <div class="tags"><span>Cisco ASA</span><span>DMZ</span><span>VLAN</span></div>
-                        <a href="sae21.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Réseau</a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="theys.png" alt="Systèmes de diffusion TV">
-                        <span class="badge">Télécoms & Signaux</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Étude des Systèmes de Diffusion TV</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Analyser les chaînes de transmission de la télévision analogique et numérique (TNT/Satellite).</p>
-                            <p><strong>Solution :</strong> Étude théorique et pratique des modulations (QPSK), des techniques de correction d'erreurs (Viterbi, Reed-Solomon) et des infrastructures de diffusion par faisceaux hertziens.</p>
-                        </div>
-                        <div class="tags"><span>TNT</span><span>QPSK</span><span>Satellite</span><span>Traitement du Signal</span></div>
-                        <a href="theys.pdf" class="btn-download" download>
-                            <i class="fa-solid fa-file-pdf"></i> Télécharger le compte-rendu
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card" data-category="cyber">
-                    <div class="project-img-wrapper">
-                        <img src="pen1.png" alt="Pentest Linux">
-                        <span class="badge">Pentesting</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pentest 1 : Compromission Linux & Reverse Shell</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Identifier et exploiter des vulnérabilités critiques pour obtenir un accès root sur une machine cible Linux.</p>
-                            <p><strong>Solution :</strong> Énumération des ports via Nmap, exploitation d'une faille d'exécution arbitraire de commande sur le port 8080 (Reverse Shell PHP) et élévation de privilèges via un binaire SUID mal configuré.</p>
-                        </div>
-                        <div class="tags"><span>Reverse Shell</span><span>Nmap</span><span>SUID</span><span>Linux</span></div>
-                        <a href="RapportPentest1.pdf" class="btn-download" download>
-                            <i class="fa-solid fa-file-pdf"></i> Télécharger le Rapport 1
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="cyber">
-                    <div class="project-img-wrapper">
-                        <img src="pen2.png" alt="Pentest Windows">
-                        <span class="badge">Pentesting</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pentest 3 : Injection SQL & EternalBlue</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Compromettre totalement un serveur Windows non patché en combinant des failles Web et Système.</p>
-                            <p><strong>Solution :</strong> Extraction de base de données par Injection SQL (Dump), puis exploitation de la faille critique MS17-010 (EternalBlue) via Metasploit pour obtenir un accès SYSTEM (Meterpreter).</p>
-                        </div>
-                        <div class="tags"><span>EternalBlue</span><span>SQL Injection</span><span>Metasploit</span><span>Windows Server</span></div>
-                        <a href="RapportPentest3_ABDALLAH.pdf" class="btn-download" download>
-                            <i class="fa-solid fa-file-pdf"></i> Télécharger le Rapport 3
-                        </a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="lorawan-thumbnail.jpg" alt="LoRa">
-                        <span class="badge">Réseaux</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Optimisation Liaison LoRaWAN</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Calculer la portée maximale et choisir la meilleure configuration SF/BW en milieu urbain.</p>
-                            <p><strong>Solution :</strong> Mise en œuvre de campagnes de mesures RSSI en intérieur et en extérieur pour évaluer les performances des différentes configurations LoRa.</p>
-                        </div>
-                        <div class="tags"><span>IoT</span><span>Lora</span><span>Calculs RF</span></div>
-                        <a href="lora.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport LoRa</a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="coax.png" alt="Câble Coaxial">
-                        <span class="badge">Réseaux</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Caractérisation Câble Coaxial</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Analyser les pertes de signal (atténuation) en fonction de la fréquence.</p>
-                            <p><strong>Solution :</strong> Mesures expérimentales et tracé de courbes théoriques AdB/m(f) = α * sqrt(f) sous Matlab.</p>
-                        </div>
-                        <div class="tags"><span>Matlab</span><span>Transmission</span><span>RF</span></div>
-                        <a href="coaxial.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Rapport Coaxial</a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="res">
-                    <div class="project-img-wrapper">
-                        <img src="sae12.png" alt="Réseau Domestique">
-                        <span class="badge">Réseaux</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Analyse d'un Réseau Local (LAN)</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Découvrir et cartographier les équipements d'un réseau domestique.</p>
-                            <p><strong>Solution :</strong> Analyse des adresses IP privées/publiques, des masques et configuration du routeur SFR.</p>
-                        </div>
-                        <div class="tags"><span>IPconfig</span><span>LAN</span><span>Routage</span></div>
-                        <a href="domestique.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Fiche Travaux</a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="cyber">
-                    <div class="project-img-wrapper">
-                        <img src="cyberdiap.jpg" alt="Sensibilisation">
-                        <span class="badge">Cybersécurité</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Stratégie de Sensibilisation Cyber</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Sensibiliser des collégiens aux risques de la publication irréfléchie en ligne.</p>
-                            <p><strong>Solution :</strong> Création d'un jeu d'enquête interactif pour identifier les erreurs d'e-réputation.</p>
-                        </div>
-                        <div class="tags"><span>Éducation</span><span>Prévention</span><span>Réputation</span></div>
-                        <a href="ereput.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Plan de Séance</a>
-                    </div>
-                </div>
-            
-                <div class="project-card" data-category="sys">
-                    <div class="project-img-wrapper">
-                        <img src="planproj.png" alt="Management">
-                        <span class="badge">Systèmes</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Plan de Management de Projet</h3>
-                        <div class="project-details">
-                            <p><strong>Objectif :</strong> Définir l'organisation, les ressources et le planning d'un projet complexe.</p>
-                            <p><strong>Solution :</strong> Mise en place d'un Plan d'Assurance Qualité (PAQ) et d'un contrôle de traçabilité complet.</p>
-                        </div>
-                        <div class="tags"><span>Gestion</span><span>Qualité</span><span>Traçabilité</span></div>
-                        <a href="managementprojet.pdf" class="btn-download" download><i class="fa-solid fa-file-pdf"></i> Dossier Management</a>
-                    </div>
-                </div>
-            
-            </div>
+        <div class="project-card" data-category="res"
+          data-img="Plan_d'adressage_ip_schéma.png"
+          data-badge="Réseaux & Sécurité"
+          data-title="Concevoir un Cœur de Réseau d'Entreprise Sécurisé"
+          data-context="Projet de conception réseau complète — architecture d'entreprise de bout en bout."
+          data-objectif="Concevoir l'infrastructure réseau complète d'une entreprise : cœur de réseau performant, protection périmétrique et segmentation."
+          data-solution="Switch Multi-Layer (MLS), segmentation VLANs, services DHCP/DNS redondants, pare-feu Cisco ASA avec zone DMZ et NAT statique, routage OSPF."
+          data-personnel="Ce projet m'a fait comprendre la complexité d'une vrai architecture d'entreprise. Faire cohabiter le routage OSPF, le pare-feu ASA et la DMZ sur un même schéma cohérent était un vrai challenge."
+          data-tags="Cisco ASA,VLAN,DMZ,Routage OSPF,MLS,DHCP"
+          data-file="Plan_d'adressage_ip_schéma.png"
+          data-filelabel="Télécharger la topologie">
+          <div class="project-img-wrapper">
+            <img src="Plan_d'adressage_ip_schéma.png" alt="Cœur de réseau sécurisé">
+            <span class="badge">Réseaux & Sécurité</span>
+          </div>
+          <div class="project-info">
+            <h3>Concevoir un Cœur de Réseau d'Entreprise Sécurisé</h3>
+            <p class="short-desc">Architecture complète : MLS, VLANs, Cisco ASA, DMZ, NAT statique, OSPF — conception de bout en bout.</p>
+            <div class="tags"><span>Cisco ASA</span><span>VLAN</span><span>DMZ</span><span>OSPF</span></div>
+          </div>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container">&copy; 2026 Johan Abdallah - Portfolio</div>
-    </footer>
+        <div class="project-card" data-category="sys"
+          data-img="thales.png"
+          data-badge="Systèmes & IoT"
+          data-title="Développer un Système de Surveillance Avionique pour Thales"
+          data-context="Projet SAE réalisé en équipe — partenariat avec Thales Group. Développement d'un système embarqué de prise de photos automatisée."
+          data-objectif="Créer un système de surveillance d'un banc avionique via Raspberry Pi et Pico WH."
+          data-solution="Interface web Flask pour la visualisation, base de données MariaDB pour le stockage, communication réseau entre microcontrôleurs via protocole personnalisé."
+          data-personnel="Travailler sur un projet lié à l'aéronautique, c'était une première. J'ai développé la partie interface web Flask et les modules de communication réseau entre les Raspberry."
+          data-tags="Raspberry Pi,Python,Flask,MariaDB,IoT,Embarqué"
+          data-file="thales.pdf"
+          data-filelabel="Rapport Thales">
+          <div class="project-img-wrapper">
+            <img src="thales.png" alt="Projet Thales Raspberry">
+            <span class="badge">Systèmes & IoT</span>
+          </div>
+          <div class="project-info">
+            <h3>Développer un Système de Surveillance Avionique pour Thales</h3>
+            <p class="short-desc">Système de surveillance embarqué : Raspberry Pi + Flask + MariaDB pour un banc avionique Thales.</p>
+            <div class="tags"><span>Raspberry Pi</span><span>Python</span><span>Flask</span><span>MariaDB</span></div>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="project-card" data-category="cyber"
+          data-img="bouzuseclogo.png"
+          data-badge="Cybersécurité & Dev"
+          data-title="Concevoir un Scanner de Vulnérabilités Web Open Source"
+          data-context="Projet SAE 401 réalisé en équipe de 5 (BouzuCorp) — j'ai assuré le rôle de chef de projet, designer de l'interface et coordinateur des livrables."
+          data-objectif="Créer un écosystème capable de scanner les failles d'un site web, centraliser les résultats et les présenter de façon compréhensible pour n'importe quel dirigeant, sans licence coûteuse."
+          data-solution="Architecture Docker containerisée avec Nmap, Nikto, GoBuster, Whois et WhatWeb. Moteur de scoring inspiré du référentiel ANSSI avec &quot;métaphore de la batterie&quot;. Génération automatique de rapports PDF (Simple 2 pages / Avancé 7 pages). Interface web Flask avec barre de progression en temps réel."
+          data-personnel="C'est un des projets dont je suis le plus fier. J'ai conçu toute l'interface utilisateur et le système de scoring ANSSI. Voir un dirigeant non-technique comprendre instantanément son niveau de risque grâce à notre jauge, c'était exactement l'objectif qu'on s'était fixé."
+          data-tags="Python,Docker,Flask,Nmap,Nikto,GoBuster,Scoring ANSSI"
+          data-file="Soutenance_SAE401.pdf"
+          data-filelabel="Présentation BouzuSec">
+          <div class="project-img-wrapper">
+            <img src="bouzuseclogo.png" alt="BouzuSec Scanner">
+            <span class="badge">Cybersécurité & Dev</span>
+          </div>
+          <div class="project-info">
+            <h3>Concevoir un Scanner de Vulnérabilités Web Open Source</h3>
+            <p class="short-desc">Scanner web 100% open source avec scoring ANSSI et rapports PDF automatisés. Architecture Docker, interface intuitive.</p>
+            <div class="tags"><span>Python</span><span>Docker</span><span>Nmap</span><span>ANSSI</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber"
+          data-img="bouzuseclogo.png"
+          data-badge="Documentation Technique"
+          data-title="Documenter l'Architecture Technique Interne de BouzuSec"
+          data-context="Annexe technique de BouzuSec — documentation interne de l'algorithme de scoring, des modules de scan et de l'architecture Docker."
+          data-objectif="Produire une documentation technique exhaustive du système BouzuSec : algorithmes de scoring ANSSI, modules Python, architecture Docker et pipeline de génération PDF."
+          data-solution="Documentation de 11 pages couvrant : scoring.py (5 fonctions), evaluer_*() par axe, orchestrateur avec ThreadPoolExecutor, génération PDF avec FPDF et matplotlib, procédures d'installation Docker."
+          data-personnel="J'ai rédigé cette annexe pour que n'importe quel développeur puisse reprendre le projet. Documenter du code, c'est souvent la partie qu'on bâcle — j'ai voulu en faire quelque chose de vraiment utilisable."
+          data-tags="Python,Documentation,FPDF,Matplotlib,Docker,Architecture"
+          data-file="Annexe_BouzuSec_SAE401.pdf"
+          data-filelabel="Annexe Technique BouzuSec">
+          <div class="project-img-wrapper">
+            <img src="bouzuseclogo.png" alt="Documentation BouzuSec">
+            <span class="badge">Documentation Technique</span>
+          </div>
+          <div class="project-info">
+            <h3>Documenter l'Architecture Technique Interne de BouzuSec</h3>
+            <p class="short-desc">Annexe technique complète : algorithmes Python, scoring ANSSI, Docker, génération PDF — 11 pages.</p>
+            <div class="tags"><span>Python</span><span>Docker</span><span>Documentation</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber"
+          data-img="topologieTP.png"
+          data-badge="Cybersécurité"
+          data-title="Exploiter et Défendre les Vulnérabilités de Couche 2 (VLAN, DHCP, ARP)"
+          data-context="TP de cybersécurité R4.Cyber.09 réalisé en binôme avec Mohamed Droussi. Environnement GNS3 + Kali Linux + Cisco IOS."
+          data-objectif="Comprendre, reproduire et contrer trois attaques critiques de couche 2 : VLAN Hopping (Switch Spoofing &amp; Double Tagging), DHCP Spoofing (Starvation + faux serveur) et ARP Spoofing (MITM)."
+          data-solution="Topologie GNS3 complète avec routeur Cisco, 3 switchs, machines Debian et Kali. Exploitation avec Yersinia, dnsmasq, arpspoof et Wireshark. Contremesures : DHCP Snooping, DAI, désactivation DTP, VLAN Natif 99."
+          data-personnel="Avec un collègue, on a rédigé la totalité du TP (42 pages), toutes les réponses, et co-réalisé les manipulations. Le fait d'avoir joué les deux rôles — attaquant et défenseur — m'a vraiment permis de comprendre pourquoi la couche 2 est si souvent négligée en entreprise."
+          data-tags="Kali Linux,GNS3,Cisco IOS,Wireshark,Yersinia,DHCP Snooping,DAI"
+          data-file="R4_09_TP_DROUSSI_ABDALLAH.pdf"
+          data-filelabel="Rapport TP Cybersécurité LAN">
+          <div class="project-img-wrapper">
+            <img src="topologieTP.png" alt="TP Cybersécurité LAN">
+            <span class="badge">Cybersécurité</span>
+          </div>
+          <div class="project-info">
+            <h3>Exploiter et Défendre les Vulnérabilités de Couche 2</h3>
+            <p class="short-desc">VLAN Hopping, DHCP Spoofing et ARP Spoofing — attaques et contre-mesures sur environnement GNS3/Cisco.</p>
+            <div class="tags"><span>GNS3</span><span>Kali</span><span>Cisco</span><span>Wireshark</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber"
+          data-img="pen1.png"
+          data-badge="Pentesting"
+          data-title="Obtenir un Accès Root via Reverse Shell et Exploitation SUID"
+          data-context="Premier rapport de pentest individuel — machine cible Linux isolée."
+          data-objectif="Identifier et exploiter des vulnérabilités critiques pour obtenir un accès root sur une machine cible Linux."
+          data-solution="Énumération des ports via Nmap, exploitation d'une faille d'exécution arbitraire de commande sur le port 8080 (Reverse Shell PHP) et élévation de privilèges via un binaire SUID mal configuré."
+          data-personnel="Mon tout premier pentest solo. J'ai passé des heures sur l'élévation de privilèges SUID, mais quand j'ai finalement eu le prompt root, la satisfaction était immense."
+          data-tags="Reverse Shell,Nmap,SUID,Linux,PHP"
+          data-file="RapportPentest1.pdf"
+          data-filelabel="Rapport Pentest 1">
+          <div class="project-img-wrapper">
+            <img src="pen1.png" alt="Pentest Linux">
+            <span class="badge">Pentesting</span>
+          </div>
+          <div class="project-info">
+            <h3>Obtenir un Accès Root via Reverse Shell et Exploitation SUID</h3>
+            <p class="short-desc">Nmap → Reverse Shell PHP → SUID exploit. Compromission complète d'une machine Linux.</p>
+            <div class="tags"><span>Reverse Shell</span><span>Nmap</span><span>SUID</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber"
+          data-img="pen2.png"
+          data-badge="Pentesting"
+          data-title="Compromettre un Serveur Windows avec EternalBlue et Injection SQL"
+          data-context="Troisième rapport de pentest — cible Windows Server non patché + application web vulnérable."
+          data-objectif="Compromettre totalement un serveur Windows non patché en combinant des failles Web et Système."
+          data-solution="Extraction de base de données par Injection SQL (Dump), puis exploitation de la faille critique MS17-010 (EternalBlue) via Metasploit pour obtenir un accès SYSTEM (Meterpreter)."
+          data-personnel="Voir EternalBlue fonctionner en pratique, c'est impressionnant et effrayant à la fois. Ce pentest m'a définitivement convaincu de l'importance du patch management en entreprise."
+          data-tags="EternalBlue,SQL Injection,Metasploit,Windows Server,MS17-010"
+          data-file="RapportPentest3_ABDALLAH.pdf"
+          data-filelabel="Rapport Pentest 3">
+          <div class="project-img-wrapper">
+            <img src="pen2.png" alt="Pentest Windows EternalBlue">
+            <span class="badge">Pentesting</span>
+          </div>
+          <div class="project-info">
+            <h3>Compromettre un Serveur Windows avec EternalBlue et Injection SQL</h3>
+            <p class="short-desc">SQL Dump + MS17-010 (EternalBlue) via Metasploit → accès SYSTEM Meterpreter.</p>
+            <div class="tags"><span>EternalBlue</span><span>SQL Injection</span><span>Metasploit</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="sys"
+          data-img="powershell.png"
+          data-badge="Systèmes & Admin"
+          data-title="Automatiser la Gestion d'un Active Directory avec PowerShell"
+          data-context="Projet Windows Server réalisé seul dans le cadre du cours d'administration système. Domaine rt.local sur Windows Server 2022."
+          data-objectif="Développer un script PowerShell complet pour administrer les comptes utilisateurs AD : création d'OUs, création de comptes à partir d'un CSV, archivage et suppression avec journalisation complète."
+          data-solution="Script Manage-ADUsers.ps1 avec 3 actions (CreateOU/Create/Delete), support -WhatIf pour simulation, journalisation horodatée INFO/WARNING/ERROR dans C:\log, droits NTFS via module NTFSAccess, archivage ZIP automatique à la suppression."
+          data-personnel="J'ai particulièrement travaillé la robustesse du script : chaque action est entourée de try/catch, et le -WhatIf permet de tester sans risque. C'est le genre de script qu'on retrouve vraiment dans les SI d'entreprise."
+          data-tags="PowerShell,Active Directory,Windows Server,NTFS,CSV,Scripting"
+          data-file="Rapport_Projet.pdf"
+          data-filelabel="Rapport PowerShell AD">
+          <div class="project-img-wrapper">
+            <img src="powershell.png" alt="Active Directory PowerShell">
+            <span class="badge">Systèmes & Admin</span>
+          </div>
+          <div class="project-info">
+            <h3>Automatiser la Gestion d'un Active Directory avec PowerShell</h3>
+            <p class="short-desc">Script PowerShell complet : création d'OUs, comptes utilisateurs depuis CSV, archivage ZIP, logs horodatés.</p>
+            <div class="tags"><span>PowerShell</span><span>Active Directory</span><span>Windows Server</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="res"
+          data-img="sae21.png"
+          data-badge="Réseaux"
+          data-title="Mettre en Place une Architecture DMZ avec Pare-feu ASA"
+          data-context="SAE 21 — configuration d'une infrastructure réseau sécurisée avec zone démilitarisée."
+          data-objectif="Mettre en place un cœur de réseau sécurisé avec une zone démilitarisée (DMZ) opérationnelle."
+          data-solution="Configuration VLANs, NAT statique/dynamique et règles d'ACL sur Cisco ASA pour isoler les flux critiques et protéger les serveurs exposés."
+          data-personnel="La DMZ, c'est le concept qui m'a le plus aidé à comprendre la philosophie de défense en profondeur. Configurer les ACL ASA pour autoriser uniquement le bon trafic était plus subtil que je ne le pensais."
+          data-tags="Cisco ASA,DMZ,VLAN,NAT,ACL"
+          data-file="sae21.pdf"
+          data-filelabel="Rapport Réseau SAE21">
+          <div class="project-img-wrapper">
+            <img src="sae21.png" alt="Architecture DMZ ASA">
+            <span class="badge">Réseaux</span>
+          </div>
+          <div class="project-info">
+            <h3>Mettre en Place une Architecture DMZ avec Pare-feu ASA</h3>
+            <p class="short-desc">VLANs + NAT statique/dynamique + ACL sur Cisco ASA pour isolation des flux critiques en DMZ.</p>
+            <div class="tags"><span>Cisco ASA</span><span>DMZ</span><span>NAT</span><span>ACL</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="res"
+          data-img="theys.png"
+          data-badge="Télécoms & Signaux"
+          data-title="Analyser les Systèmes de Diffusion TV Analogique et Numérique"
+          data-context="TP Télécommunications — étude des chaînes de transmission TNT/Satellite sur site à Theys."
+          data-objectif="Analyser les chaînes de transmission de la télévision analogique et numérique (TNT/Satellite)."
+          data-solution="Étude théorique et pratique des modulations QPSK, techniques de correction d'erreurs (Viterbi, Reed-Solomon) et infrastructures de diffusion par faisceaux hertziens."
+          data-personnel="Voir physiquement les paraboles et mesurer les signaux donnait une dimension concrète à la théorie."
+          data-tags="TNT,QPSK,Satellite,Reed-Solomon,Faisceaux hertziens"
+          data-file="theys.pdf"
+          data-filelabel="Compte-rendu Diffusion TV">
+          <div class="project-img-wrapper">
+            <img src="theys.png" alt="Diffusion TV TNT Satellite">
+            <span class="badge">Télécoms & Signaux</span>
+          </div>
+          <div class="project-info">
+            <h3>Analyser les Systèmes de Diffusion TV Analogique et Numérique</h3>
+            <p class="short-desc">Étude TNT/Satellite : QPSK, Viterbi, Reed-Solomon, faisceaux hertziens. Mesures terrain à Theys.</p>
+            <div class="tags"><span>TNT</span><span>QPSK</span><span>Satellite</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="res"
+          data-img="lorawan-thumbnail.jpg"
+          data-badge="Réseaux IoT"
+          data-title="Optimiser une Liaison LoRaWAN en Milieu Urbain"
+          data-context="SAE IoT — campagnes de mesure RSSI en intérieur et extérieur autour du campus."
+          data-objectif="Calculer la portée maximale et choisir la meilleure configuration SF/BW pour une liaison LoRa en milieu urbain."
+          data-solution="Mesures RSSI avec différentes configurations Spreading Factor / Bandwidth en intérieur et extérieur, analyse statistique des résultats, recommandations de déploiement."
+          data-personnel="Se balader avec un capteur LoRa et mesurer le signal en temps réel dans les rues de Valbonne, c'était une façon originale d'apprendre les propagations radio. On a fini par trouver le spot parfait depuis le toit du bâtiment !"
+          data-tags="IoT,LoRa,LoRaWAN,RSSI,RF,Mesures terrain"
+          data-file="lora.pdf"
+          data-filelabel="Rapport LoRaWAN">
+          <div class="project-img-wrapper">
+            <img src="lorawan-thumbnail.jpg" alt="LoRaWAN IoT">
+            <span class="badge">Réseaux IoT</span>
+          </div>
+          <div class="project-info">
+            <h3>Optimiser une Liaison LoRaWAN en Milieu Urbain</h3>
+            <p class="short-desc">Campagnes RSSI in/outdoor pour choisir la configuration SF/BW optimale en déploiement IoT urbain.</p>
+            <div class="tags"><span>LoRa</span><span>IoT</span><span>RSSI</span><span>RF</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="res"
+          data-img="coax.png"
+          data-badge="Réseaux & Signaux"
+          data-title="Caractériser l'Atténuation d'un Câble Coaxial par Mesures"
+          data-context="TP Transmission — mesures expérimentales sur câble coaxial RG-58 en salle de TP."
+          data-objectif="Analyser les pertes de signal (atténuation) en fonction de la fréquence sur câble coaxial."
+          data-solution="Mesures expérimentales avec analyseur de spectre et tracé de courbes théoriques AdB/m(f) = α · √f sous Matlab pour valider le modèle."
+          data-personnel="Voir la courbe théorique coïncider avec les mesures expérimentales était satisfaisant. Ça rend concrets tous les calculs vus en cours de propagation."
+          data-tags="Matlab,Coaxial,Atténuation,RF,Mesures"
+          data-file="coaxial.pdf"
+          data-filelabel="Rapport Câble Coaxial">
+          <div class="project-img-wrapper">
+            <img src="coax.png" alt="Caractérisation câble coaxial">
+            <span class="badge">Réseaux & Signaux</span>
+          </div>
+          <div class="project-info">
+            <h3>Caractériser l'Atténuation d'un Câble Coaxial par Mesures</h3>
+            <p class="short-desc">Mesures expérimentales + modèle Matlab AdB/m(f)=α√f sur câble RG-58.</p>
+            <div class="tags"><span>Matlab</span><span>RF</span><span>Transmission</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="res"
+          data-img="sae12.png"
+          data-badge="Réseaux"
+          data-title="Cartographier et Analyser un Réseau Local Domestique"
+          data-context="SAE 12 — première analyse réseau en autonomie sur réseau domestique réel."
+          data-objectif="Découvrir et cartographier les équipements d'un réseau domestique, comprendre l'adressage IP privé/public."
+          data-solution="Analyse des adresses IP privées/publiques, des masques et configuration du routeur SFR. Utilisation de ipconfig, arp, et outils de scan réseau."
+          data-personnel="Mon tout premier TP réseau sur un vrai environnement — chez moi, avec ma Livebox."
+          data-tags="LAN,IPconfig,Routage,ARP,Nmap"
+          data-file="domestique.pdf"
+          data-filelabel="Fiche Travaux LAN">
+          <div class="project-img-wrapper">
+            <img src="sae12.png" alt="Réseau domestique LAN">
+            <span class="badge">Réseaux</span>
+          </div>
+          <div class="project-info">
+            <h3>Cartographier et Analyser un Réseau Local Domestique</h3>
+            <p class="short-desc">Scan et cartographie d'un LAN domestique réel : adressage, masques, routeur SFR, équipements connectés.</p>
+            <div class="tags"><span>LAN</span><span>Routage</span><span>Nmap</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber"
+          data-img="cyberdiap.jpg"
+          data-badge="Cybersécurité"
+          data-title="Sensibiliser des Collégiens aux Risques de l'E-Réputation"
+          data-context="Mission de sensibilisation auprès de collégiens — projet SAE de communication et prévention numérique."
+          data-objectif="Sensibiliser des collégiens aux risques de la publication irréfléchie en ligne et aux enjeux d'e-réputation."
+          data-solution="Création d'un jeu d'enquête interactif pour identifier les erreurs d'e-réputation, avec mise en situation et scénarios réels adaptés au public jeune."
+          data-personnel="Adapter un discours technique à des collégiens de 13 ans, c'est un vrai exercice de pédagogie."
+          data-tags="Éducation,Prévention,E-réputation,Sensibilisation"
+          data-file="ereput.pdf"
+          data-filelabel="Plan de Séance">
+          <div class="project-img-wrapper">
+            <img src="cyberdiap.jpg" alt="Sensibilisation cyber collégiens">
+            <span class="badge">Cybersécurité</span>
+          </div>
+          <div class="project-info">
+            <h3>Sensibiliser des Collégiens aux Risques de l'E-Réputation</h3>
+            <p class="short-desc">Jeu d'enquête interactif créé pour initier des collégiens aux dangers de la publication en ligne.</p>
+            <div class="tags"><span>Éducation</span><span>Prévention</span><span>E-réputation</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="sys"
+          data-img="planproj.png"
+          data-badge="Gestion de projet"
+          data-title="Piloter un Projet Complexe avec un Plan de Management (PAQ)"
+          data-context="SAE Management — mise en place d'une démarche qualité sur un projet technique multi-étapes."
+          data-objectif="Définir l'organisation, les ressources et le planning d'un projet complexe en suivant une démarche qualité rigoureuse."
+          data-solution="Rédaction d'un Plan d'Assurance Qualité (PAQ) complet avec traçabilité des livrables, diagramme de Gantt, matrice RACI et contrôle de configuration."
+          data-personnel="Ce projet m'a appris la rigueur documentaire qu'on attend en entreprise. Rédiger un PAQ sérieux, c'est fastidieux, mais ça structure vraiment la façon d'aborder un projet."
+          data-tags="Gestion de projet,PAQ,Gantt,RACI,Qualité"
+          data-file="managementprojet.pdf"
+          data-filelabel="Dossier Management">
+          <div class="project-img-wrapper">
+            <img src="planproj.png" alt="Management de projet PAQ">
+            <span class="badge">Gestion de projet</span>
+          </div>
+          <div class="project-info">
+            <h3>Piloter un Projet Complexe avec un Plan de Management</h3>
+            <p class="short-desc">PAQ complet, diagramme de Gantt, RACI et contrôle de traçabilité pour un projet technique multi-équipes.</p>
+            <div class="tags"><span>PAQ</span><span>Gantt</span><span>Qualité</span></div>
+          </div>
+        </div>
+
+      </div></div></section>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="" class="modal-img">
+      <div class="modal-body">
+        <span class="modal-badge"></span>
+        <h2 class="modal-title"></h2>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info" style="margin-right:6px;"></i>Contexte</h4>
+          <p class="modal-context"></p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye" style="margin-right:6px;"></i>Objectif</h4>
+          <p class="modal-objectif"></p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-gears" style="margin-right:6px;"></i>Solution mise en œuvre</h4>
+          <p class="modal-solution"></p>
+        </div>
+        <div class="modal-section" style="background:var(--green-ghost);border:1px solid rgba(0,230,118,.15);border-radius:10px;padding:14px 16px;">
+          <h4 style="color:var(--green);"><i class="fa-regular fa-comment" style="margin-right:6px;"></i>Mon ressenti</h4>
+          <p class="modal-personnel" style="color:var(--text);font-style:italic;"></p>
+        </div>
+
+        <div class="tags modal-tags"></div>
+        <a href="#" class="btn-download modal-download" download>
+          <i class="fa-solid fa-file-pdf"></i> Télécharger le rapport
+        </a>
+      </div>
+      <div class="modal-nav">
+        <button class="modal-nav-btn" id="modal-prev">
+          <i class="fa-solid fa-chevron-left"></i> Précédent
+        </button>
+        <span class="modal-counter"></span>
+        <button class="modal-nav-btn" id="modal-next">
+          Suivant <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Johan Abdallah · Portfolio R&T Cybersécurité</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

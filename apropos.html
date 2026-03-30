@@ -1,115 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos - Johan Abdallah</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À Propos — Johan Abdallah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Mon Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="apropos.html" class="active">À propos</a></li>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Johan<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="apropos.html" class="active">À propos</a></li>
+      </ul>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>
+        <i class="fa-solid fa-download" style="font-size:.75rem;"></i> CV
+      </a>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html" class="active">À propos</a>
+      <a href="CV_ABDALLAH_Alternance-2026-2027.pdf" class="btn-outline-nav" download>Télécharger CV</a>
+    </div>
+  </nav>
+
+  <section class="section header-offset">
+    <div class="container">
+
+      <!-- ── FORMATION ── -->
+      <span class="section-tag" style="display:block;text-align:center">Mon parcours</span>
+      <h2 class="main-title">Formation</h2>
+      <p class="sub-title">De la terminale jusqu'à aujourd'hui</p>
+
+      <div class="timeline fade-in">
+
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">2026–2027 (Recherche en cours)</span>
+            <h3>Alternance Réseaux / Cybersécurité</h3>
+            <h4 class="text-green">En recherche active</h4>
+            <p>Je recherche un contrat d'alternance d'1 an dans les domaines des réseaux, de la cybersécurité ou de l'administration système à partir de septembre 2026.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">2024 – 2026</span>
+            <h3>BUT Réseaux & Télécommunications</h3>
+            <h4>IUT Nice Côte d'Azur — Antenne Valbonne</h4>
+            <p>Spécialisation Cybersécurité. Administration réseau, pentest, virtualisation, protocoles télécoms, projet Thales, SAE BouzuSec.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">2023 – 2024</span>
+            <h3>Baccalauréat Général</h3>
+            <h4>Lycée Henri Matisse — Vence</h4>
+            <p><strong style="color:var(--green)">Mention Bien</strong> — Spécialités : NSI (Numérique et Sciences Informatiques), Mathématiques, Anglais Monde Contemporain.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── EXPÉRIENCE PRO ── -->
+      <div class="mt-5 fade-in">
+        <span class="section-tag" style="display:block;text-align:center">Parcours professionnel</span>
+        <h2 class="main-title">Expériences Professionnelles</h2>
+        <p class="sub-title">Des environnements variés qui m'ont appris la rigueur et l'adaptabilité</p>
+
+        <div class="xp-grid">
+          <div class="xp-card">
+            <span class="xp-date">Juillet – Août 2025</span>
+            <h3>Poissonnier</h3>
+            <h4>Poissonnerie Carrefour — Lingostière (06)</h4>
+            <ul>
+              <li>Conseil et vente directe à la clientèle</li>
+              <li>Gestion du stand sous forte affluence</li>
+              <li>Travail en équipe dans un environnement exigeant</li>
             </ul>
-            <a href="CV.pdf" class="btn-outline-dark" download>Télécharger CV</a>
+          </div>
+          <div class="xp-card">
+            <span class="xp-date">Mai – Juillet 2023</span>
+            <h3>Valet de chambre</h3>
+            <h4>Hôtel La Vague — St Paul de Vence (SPN)</h4>
+            <ul>
+              <li>Entretien des chambres selon les standards hôteliers</li>
+              <li>Travail en autonomie ou en équipe selon les contraintes</li>
+              <li>Respect rigoureux des délais et de la qualité</li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <section class="section header-offset fade-in">
-        <div class="container">
-            <h2 class="main-title">Mon Parcours</h2>
-            <p class="sub-title">Formation</p>
-            
-            <div class="timeline">
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <span class="date">Avril 2026</span>
-                        <h3>Stage Technique</h3>
-                        <h4 class="text-green">Recherche en cours</h4>
-                        <p>Stage de 10 semaines dans le domaine d'étude</p>
-                    </div>
-                </div>
+      <!-- ── VALEURS ── -->
+      <div class="mt-5 fade-in">
+        <span class="section-tag" style="display:block;text-align:center">Ce qui me guide</span>
+        <h2 class="main-title">Mes Valeurs</h2>
 
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="date">2024 - 2026</span>
-                        <h3>BUT Réseaux & Télécommunications</h3>
-                        <h4>IUT de Nice Côte d'Azur (Valbonne)</h4>
-                        <p>Spécialisation Cybersécurité. Apprentissage approfondi de l'administration système et réseau.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <span class="date">2024</span>
-                        <h3>Baccalauréat Général</h3>
-                        <h4>Lycée Henri Matisse (Vence)</h4>
-                        <p><strong>Mention Bien</strong><br>
-                        Spécialités : NSI (Numérique et Sciences Informatiques), Mathématiques, Anglais.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="main-title">Mes Valeurs</h2>
-                <div class="about-grid">
-                    <div class="card text-center">
-                        <div class="card-icon green m-auto"><i class="fa-solid fa-check-double"></i></div>
-                        <h3>Rigueur</h3>
-                        <p>Précision dans la configuration réseau et l'analyse de données.</p>
-                    </div>
-                    <div class="card text-center">
-                        <div class="card-icon blue m-auto"><i class="fa-solid fa-users"></i></div>
-                        <h3>Esprit d'équipe</h3>
-                        <p>Collaboration active sur des projets techniques.</p>
-                    </div>
-                    <div class="card text-center">
-                        <div class="card-icon mint m-auto"><i class="fa-regular fa-lightbulb"></i></div>
-                        <h3>Curiosité</h3>
-                        <p>Veille constante sur les nouvelles technologies.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="main-title">Mes Passions</h2>
-                <div class="passions-grid">
-                    <div class="passion-item">
-                        <div class="passion-icon green-circle"><i class="fa-solid fa-desktop"></i></div>
-                        <h4>Informatique</h4>
-                    </div>
-                    <div class="passion-item">
-                        <div class="passion-icon white-circle"><i class="fa-solid fa-fish"></i></div>
-                        <h4>Pêche</h4>
-                    </div>
-                    <div class="passion-item">
-                        <div class="passion-icon green-circle"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                        <h4>Mécanique</h4>
-                    </div>
-                    <div class="passion-item">
-                        <div class="passion-icon white-circle"><i class="fa-solid fa-dumbbell"></i></div>
-                        <h4>Sport</h4>
-                    </div>
-                </div>
-            </div>
+        <div class="about-grid">
+          <div class="card text-center">
+            <div class="card-icon green m-auto"><i class="fa-solid fa-check-double"></i></div>
+            <h3>Rigueur</h3>
+            <p>Précision dans la configuration réseau, l'écriture de scripts et l'analyse de vulnérabilités. Je préfère prendre le temps de bien faire plutôt que de bâcler.</p>
+          </div>
+          <div class="card text-center">
+            <div class="card-icon blue m-auto"><i class="fa-solid fa-users"></i></div>
+            <h3>Esprit d'équipe</h3>
+            <p>Les meilleurs projets que j'ai réalisés étaient collectifs — BouzuSec en est la preuve. Je m'intègre rapidement et je sais autant écouter que proposer.</p>
+          </div>
+          <div class="card text-center">
+            <div class="card-icon mint m-auto"><i class="fa-regular fa-lightbulb"></i></div>
+            <h3>Curiosité</h3>
+            <p>Veille constante sur les nouvelles technologies, les CVE récentes et les outils de sécurité. J'aime comprendre comment les choses fonctionnent en profondeur.</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <footer class="footer">
-        <div class="container">
-   
-            <p>&copy; 2026 Johan Abdallah - Portfolio</p>
+      <!-- ── SECTION PERSONNELLE ── -->
+      <div class="mt-5 fade-in">
+        <span class="section-tag" style="display:block;text-align:center">Qui je suis vraiment</span>
+        <h2 class="main-title">Un peu plus sur moi</h2>
+        <p class="sub-title">Au-delà des réseaux et des terminaux</p>
+
+        <div class="perso-section">
+          <p>
+            J'ai 19 ans, je vis à Vence (06), à deux pas de la mer et des montagnes — un cadre qui donne envie de pratiquer des sports dehors autant que de rester derrière un écran. 
+            <strong>L'informatique est une passion depuis que j'ai l'âge de toucher à un clavier</strong> : j'ai commencé par bricoler des ordinateurs, et aujourd'hui je configure des pare-feu Cisco ASA.
+          </p>
+          <p>
+            En dehors des cours, je pratique <strong>le football</strong> , <strong>la musculation</strong>, le padel, le futsal et la course à pied. Le sport m'a appris la régularité et la persévérance — des qualités que je retrouve dans l'apprentissage technique.
+          </p>
+          <p>
+            Je suis aussi <strong>passionné de mécanique</strong> : j'aime comprendre comment fonctionne un moteur, réaliser des petites réparations moi-même. Il y a quelque chose de satisfaisant à diagnostiquer une panne — qu'elle soit dans un réseau ou dans une voiture.
+          </p>
+          <p>
+            La <strong>pêche et la chasse sous-marine</strong> complètent ce tableau : elles m'apportent le calme et la patience dont j'ai parfois besoin pour décrocher des écrans. C'est aussi une façon de profiter de la chance d'habiter sur la Côte d'Azur.
+          </p>
+          <p>
+            Je parle <strong>anglais couramment (B2)</strong> et j'ai des notions d'espagnol (A2). Je regarde souvent des vidéos YouTube de cybersécurité en anglais.
+          </p>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- ── PASSIONS ── -->
+      <div class="mt-5 fade-in">
+        <h2 class="main-title">Mes Passions</h2>
+        <div class="passions-grid" style="margin-top:36px;">
+          <div class="passion-item">
+            <div class="passion-icon green-circle"><i class="fa-solid fa-desktop"></i></div>
+            <h4>Informatique</h4>
+          </div>
+          <div class="passion-item">
+            <div class="passion-icon white-circle"><i class="fa-solid fa-futbol"></i></div>
+            <h4>Football</h4>
+          </div>
+          <div class="passion-item">
+            <div class="passion-icon green-circle"><i class="fa-solid fa-dumbbell"></i></div>
+            <h4>Musculation</h4>
+          </div>
+          <div class="passion-item">
+            <div class="passion-icon white-circle"><i class="fa-solid fa-fish"></i></div>
+            <h4>Pêche</h4>
+          </div>
+          <div class="passion-item">
+            <div class="passion-icon green-circle"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h4>Mécanique</h4>
+          </div>
+          <div class="passion-item">
+            <div class="passion-icon white-circle"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+            <h4>Padel</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Johan Abdallah · Portfolio R&T Cybersécurité</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
